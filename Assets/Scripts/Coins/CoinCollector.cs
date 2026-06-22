@@ -1,13 +1,11 @@
 using UnityEngine;
 
-public class CollectibleManager : MonoBehaviour
+public class CoinCollector : MonoBehaviour
 {
     private int _totalCoins;
     private int _collectedCoins;
 
     public bool IsAllCollected { get; private set; }
-
-    public void RegisterPickup() => _collectedCoins++;
 
     private void Awake()
     {
@@ -20,4 +18,17 @@ public class CollectibleManager : MonoBehaviour
         if (_totalCoins == _collectedCoins)
             IsAllCollected = true;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Coin coin = other.GetComponent<Coin>();
+
+        if (coin != null)
+        {
+            coin.gameObject.SetActive(false);
+            RegisterPickup();
+        }
+    }
+
+    private void RegisterPickup() => _collectedCoins++;
 }

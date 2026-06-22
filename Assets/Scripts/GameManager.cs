@@ -1,20 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private Timer _timer;
-    [SerializeField] private CollectibleManager _collectibleManager;
+    [SerializeField] private CoinCollector _coinCollector;
 
     private bool _isGameOver;
 
     private void Update()
     {
-        if (_isGameOver )
+        if (_isGameOver)
             return;
 
-        if (_collectibleManager.IsAllCollected)
+        if (_coinCollector.IsAllCollected)
         {
             _timer.StopTime();
             Win();
