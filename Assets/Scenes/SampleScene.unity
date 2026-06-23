@@ -192,7 +192,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &77927735
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -380,7 +379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &166375105
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -971,7 +969,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &340408031
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1232,7 +1229,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &445460528
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1384,7 +1380,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &503495293
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1536,7 +1531,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &584040819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1688,7 +1682,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &655950979
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1985,7 +1978,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &845378543
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2128,7 +2120,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &893928412
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2703,6 +2694,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1922947167}
+    - targetCorrespondingSourceObject: {fileID: -535878936626878966, guid: dce0728827817409d8e2e58f92fbba3b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1922947168}
   m_SourcePrefab: {fileID: 100100000, guid: dce0728827817409d8e2e58f92fbba3b, type: 3}
 --- !u!1 &1340436347
 GameObject:
@@ -3132,7 +3127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &1718275264
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3284,7 +3278,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &1802976295
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3532,7 +3525,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &1906671544
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3584,7 +3576,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timer: {fileID: 66574078}
-  _collectibleManager: {fileID: 2101135576}
+  _coinCollector: {fileID: 1922947168}
 --- !u!4 &1910571451
 Transform:
   m_ObjectHideFlags: 0
@@ -3686,6 +3678,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ef35323d86cda4103a70272d02deaed3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1922947168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922947160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04cdce511446e492fbb96b9d2f0dd43a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1981938597
@@ -3809,7 +3813,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &2002407341
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3856,7 +3859,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speedRotation: 80
-  _collectibleManager: {fileID: 2101135576}
 --- !u!65 &2083984342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3878,50 +3880,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.25950664, y: 0.294717, z: 0.019415809}
   m_Center: {x: 0.000004529953, y: -0.001434803, z: -0.0022488758}
---- !u!1 &2101135575
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2101135577}
-  - component: {fileID: 2101135576}
-  m_Layer: 0
-  m_Name: CollectibleManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2101135576
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101135575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04cdce511446e492fbb96b9d2f0dd43a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &2101135577
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101135575}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.631041, y: -71.56369, z: 69.20364}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2127905901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4029,6 +3987,5 @@ SceneRoots:
   - {fileID: 1266060348}
   - {fileID: 66574079}
   - {fileID: 79617130}
-  - {fileID: 2101135577}
   - {fileID: 959729640}
   - {fileID: 1910571451}
